@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Wizarding World</title>
+<style type="text/css">
+#wrapper {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 800px;
+	height: 600px;
+	z-index: 1;
+	background-attachment: scroll;
+	background-image: url(images/wizard.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#wizard {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 800px;
+	height: 600px;
+	z-index: 1;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+}
+
+#loader {
+	height: 600px;
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	display: none;
+}
+#loader img { display:none; }
+#loader .is-showing { display: inline; }
+
+#nav {
+	position: absolute;
+	left: 0px;
+	top: 560px;
+	width: 800px;
+	height: 48px;
+	z-index: 2;
+}
+#wizHead {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 800px;
+	height: 50px;
+	z-index: 3;
+	background-attachment: scroll;
+	background-image: url(images/wizardHeader.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+body {
+	background-color: #000;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_setTextOfLayer(objId,x,newText) { //v9.0
+  with (document) if (getElementById && ((obj=getElementById(objId))!=null))
+    with (obj) innerHTML = unescape(newText);
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/wizardNav1Over.png','images/wizardNav2Over.png','images/wizardNav3Over.png','images/wizardNav4Over.png','images/wizardNav5Over.png','images/wizardNav6Over.png')">
+<div id="wrapper">
+  <div id="wizard"><iframe src="wizard.html" name="iframesWindow" frameborder="0" height="600" width="800" scrolling="no" style="visibility:hidden;" onload="this.style.visibility='visible'">You need a Frames Capable browser to view this content.</iframe>
+  </div>
+    <div id="loader">
+    <img src="images/wizard01.jpg" width="612" height="556" alt="image 1" class="is-showing" />
+    <img src="images/wizard02.jpg" width="612" height="556" alt="image 2" class="is-showing" />
+    <img src="images/wizard03.jpg" width="612" height="556" alt="image 3" class="is-showing" />
+    <img src="images/wizard04.jpg" width="612" height="556" alt="image 4" class="is-showing" />
+    <img src="images/wizard05.jpg" width="612" height="556" alt="image 5" class="is-showing" />
+    <img src="images/wizard06.jpg" width="612" height="556" alt="image 6" class="is-showing" />     
+    <img src="images/wizard07.jpg" width="612" height="556" alt="image 7" class="is-showing" />
+    <img src="images/wizard08.jpg" width="612" height="556" alt="image 8" class="is-showing" />
+    <img src="images/wizard09.jpg" width="612" height="556" alt="image 9" class="is-showing" />
+    <img src="images/wizard10.jpg" width="612" height="556" alt="image 10" class="is-showing" /> 
+    <img src="images/wizard11.jpg" width="612" height="556" alt="image 11" class="is-showing" />
+    <img src="images/wizard12.jpg" width="612" height="556" alt="image 12" class="is-showing" />
+    <img src="images/wizard13.jpg" width="612" height="556" alt="image 13" class="is-showing" />
+    <img src="images/wizard14.jpg" width="612" height="556" alt="image 14" class="is-showing" />
+    <img src="images/wizard15.jpg" width="612" height="556" alt="image 15" class="is-showing" />
+    <img src="images/wizard16.jpg" width="612" height="556" alt="image 16" class="is-showing" />
+    <img src="images/wizard17.jpg" width="612" height="556" alt="image 17" class="is-showing" />
+    <img src="images/wizard18.jpg" width="612" height="556" alt="image 18" class="is-showing" /> 
+    <img src="images/wizard19.jpg" width="612" height="556" alt="image 19" class="is-showing" />
+    <img src="images/wizard20.jpg" width="612" height="556" alt="image 20" class="is-showing" />
+    <img src="images/wizard21.jpg" width="612" height="556" alt="image 21" class="is-showing" />
+    <img src="images/wizard22.jpg" width="612" height="556" alt="image 22" class="is-showing" />
+    <img src="images/wizard23.jpg" width="612" height="556" alt="image 23" class="is-showing" />
+    <img src="images/wizard24.jpg" width="612" height="556" alt="image 24" class="is-showing" />
+    <img src="images/wizard25.jpg" width="612" height="556" alt="image 25" class="is-showing" /> 
+    <img src="images/yates.jpg" width="329" height="227" alt="image 26" class="is-showing" /> 
+    <img src="images/granger.jpg" width="329" height="260" alt="image 27" class="is-showing" />
+    <img src="images/radcliffe.jpg" width="329" height="293" alt="image 27" class="is-showing" />
+    <img src="images/potter_kiss.jpg" width="329" height="161" alt="image 27" class="is-showing" />
+    <img src="images/movie.jpg" width="329" height="232" alt="image 27" class="is-showing" /> 
+    <img src="images/potterMidnight.jpg" width="189" height="191" alt="image 27" class="is-showing" /> 
+    <img src="images/rowling.jpg" width="328" height="239" alt="image 27" class="is-showing" />
+    <img src="images/intro1.jpg" width="188" height="282" alt="image 27" class="is-showing" /> 
+    <img src="images/intro2.jpg" width="179" height="280" alt="image 27" class="is-showing" />
+    <img src="images/wizard.jpg" width="800" height="600" alt="image 27" class="is-showing" />
+    <img src="images/magic.png" width="176" height="43" alt="image 27" class="is-showing" />
+    <img src="images/hermione.png" width="199" height="43" alt="image 27" class="is-showing" />
+    <img src="images/radcliffe.png" width="180" height="42" alt="image 27" class="is-showing" /> 
+    <img src="images/movie.png" width="119" height="43" alt="image 27" class="is-showing" /> 
+    <img src="images/potterPhenomenon.png" width="298" height="43" alt="image 27" class="is-showing" /> 
+    <img src="images/back.png" width="58" height="29" alt="image 27" class="is-showing" />
+    <img src="images/more.png" width="64" height="29" alt="image 27" class="is-showing" />
+    <img src="images/introHeader.png" width="291" height="43" alt="image 27" class="is-showing" /> 
+    <img src="images/feather.png" width="277" height="222" alt="image 27" class="is-showing" /> 
+    <img src="images/wizardHeader.png" width="800" height="50" alt="image 27" class="is-showing" />               
+    </div>
+
+  <div id="nav"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav1','','images/wizardNav1Over.png',1)"><img src="images/wizardNav1.png" alt="Introduction" width="158" height="48" id="nav1" onclick="MM_setTextOfLayer('wizard','','&lt;iframe src=&quot;wizard.html&quot; name=&quot;iframesWindow&quot; frameborder=&quot;0&quot; height=&quot;600&quot; width=&quot;800&quot; scrolling=&quot;no&quot; style=&quot;visibility:hidden;&quot; onload=&quot;this.style.visibility=\'visible\';&quot;&gt;You need a Frames Capable browser to view this content.&lt;/iframe&gt;')" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav2','','images/wizardNav2Over.png',1)"><img src="images/wizardNav2.png" alt="Phenonmenon" width="164" height="48" id="nav2" onclick="MM_setTextOfLayer('wizard','','&lt;iframe src=&quot;wizard2.html&quot; name=&quot;iframesWindow&quot; frameborder=&quot;0&quot; height=&quot;600&quot; width=&quot;800&quot; scrolling=&quot;no&quot; style=&quot;visibility:hidden;&quot; onload=&quot;this.style.visibility=\'visible\';&quot;&gt;You need a Frames Capable browser to view this content.&lt;/iframe&gt;')" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav3','','images/wizardNav3Over.png',1)"><img src="images/wizardNav3.png" alt="The Movie" width="135" height="48" id="nav3" onclick="MM_setTextOfLayer('wizard','','&lt;iframe src=&quot;wizard3.html&quot; name=&quot;iframesWindow&quot; frameborder=&quot;0&quot; height=&quot;600&quot; width=&quot;800&quot; scrolling=&quot;no&quot; style=&quot;visibility:hidden;&quot; onload=&quot;this.style.visibility=\'visible\';&quot;&gt;You need a Frames Capable browser to view this content.&lt;/iframe&gt;')" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav4','','images/wizardNav4Over.png',1)"><img src="images/wizardNav4.png" alt="Radcliffe" width="114" height="48" id="nav4" onclick="MM_setTextOfLayer('wizard','','&lt;iframe src=&quot;wizard4.html&quot; name=&quot;iframesWindow&quot; frameborder=&quot;0&quot; height=&quot;600&quot; width=&quot;800&quot; scrolling=&quot;no&quot; style=&quot;visibility:hidden;&quot; onload=&quot;this.style.visibility=\'visible\';&quot;&gt;You need a Frames Capable browser to view this content.&lt;/iframe&gt;')" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav5','','images/wizardNav5Over.png',1)"><img src="images/wizardNav5.png" alt="Watson" width="117" height="48" id="nav5" onclick="MM_setTextOfLayer('wizard','','&lt;iframe src=&quot;wizard5.html&quot; name=&quot;iframesWindow&quot; frameborder=&quot;0&quot; height=&quot;600&quot; width=&quot;800&quot; scrolling=&quot;no&quot; style=&quot;visibility:hidden;&quot; onload=&quot;this.style.visibility=\'visible\';&quot;&gt;You need a Frames Capable browser to view this content.&lt;/iframe&gt;')" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nav6','','images/wizardNav6Over.png',1)"><img src="images/wizardNav6.png" alt="Yates" width="112" height="48" id="nav6" onclick="MM_setTextOfLayer('wizard','','&lt;iframe src=&quot;wizard6.html&quot; name=&quot;iframesWindow&quot; frameborder=&quot;0&quot; height=&quot;600&quot; width=&quot;800&quot; scrolling=&quot;no&quot; style=&quot;visibility:hidden;&quot; onload=&quot;this.style.visibility=\'visible\';&quot;&gt;You need a Frames Capable browser to view this content.&lt;/iframe&gt;')" /></a></div>
+  <div id="wizHead"></div>
+</div>
+</div>
+</body>
+</html>
